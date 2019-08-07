@@ -1,0 +1,56 @@
+{
+  "id": "7c3ab99d-3fd5-4313-9a00-5dc54cfe2973",
+  "version": "2.0",
+  "name": "test",
+  "url": "https://agences-bancaires.banques-en-ligne.fr",
+  "tests": [{
+    "id": "f9d9b19f-fb99-4370-a1b2-74cde841fd32",
+    "name": "Untitled",
+    "commands": [{
+      "id": "23beecc1-6a5e-4f17-b801-49a957888f4e",
+      "comment": "",
+      "command": "open",
+      "target": "/banque-societe-generale-meaux-victor-hugo-16587.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca5abae5-1bd8-4d76-af3c-862b3d435c22",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x877",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1b51df1-500d-4311-9faf-bbc2e81ea854",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Afficher le numéro*",
+      "targets": [
+        ["linkText=Afficher le numéro*", "linkText"],
+        ["css=.inColor", "css:finder"],
+        ["xpath=//div[@id='coordRight']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#null')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Afficher le numéro*')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6bc955c-0fb9-487d-9306-aaa07557f496",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ffc2c837-1a9c-4271-bf05-a1e3aa132c20",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f9d9b19f-fb99-4370-a1b2-74cde841fd32"]
+  }],
+  "urls": ["https://agences-bancaires.banques-en-ligne.fr/"],
+  "plugins": []
+}
